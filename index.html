@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/068e01caaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./main.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h3>Aiza<span>Stein</span></h3>
+      <input type="checkbox" id="nav-toggle" class="toggle" />
+      <nav>
+        <ul>
+          <li><a class="active" href="#">Portfolio</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="toggle-label"> <span></span></label>
+    </header>
+
+    <main>
+      <section class="sec_1" id="home">
+        <div class="content">
+          <h1>Hi, I'm <span>Aiza</span></h1>
+          <h5>a <span>Frontend Developer</span></h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            aperiam enim. Recusandae mollitia voluptates harum debitis!
+            Exercitationem numquam sequi ex.
+          </p>
+          <div class="skill" id="skill">
+            <h3>Skills</h3>
+            <div class="box">
+              <div class="logo">
+                <img src="./image/html.png" alt="" />
+              </div>
+              <div class="logo">
+                <img src="./image/CSS.png" alt="" />
+              </div>
+              <div class="logo">
+                <img src="./image/saas.png" alt="" />
+              </div>
+              <div class="logo">
+                <img src="./image/bootstrap-logo-shadow.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="btn_1">Hire Me</button>
+            <a href="#contact"> <button class="btn-2">Let's Talk</button></a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./image/img.jpeg" alt="profile_picture" />
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="img-box">
+          <img class="img-1" id="img-1" src="./image/image2.jpeg" alt="" />
+        </div>
+        <div class="about-me">
+          <h2>About</h2>
+          <p>
+            Hello! I'm <span>Aiza</span>, a passionate aspiring full stack
+            developer with a fervent enthusiasm for crafting immersive digital
+            experiences. My journey into the world of programming began with a
+            curiosity-driven exploration of web development, and since then,
+            I've been captivated by the endless possibilities that technology
+            offers in shaping our digital landscape.
+          </p>
+          <p>
+            In addition to technical skills, I believe in the power of
+            collaboration and continuous learning. I thrive in environments
+            where diverse perspectives converge to innovate and solve complex
+            challenges. Whether it's brainstorming ideas, debugging code, or
+            refining user interfaces, I'm always eager to collaborate with
+            like-minded individuals who share my passion for excellence in
+            software development.
+          </p>
+          <p>
+            As I embark on this journey to become a full stack developer, I'm
+            excited to leverage my skills and creativity to contribute
+            meaningfully to projects that push the boundaries of what's possible
+            in the digital realm. With a keen eye for detail and a relentless
+            drive for improvement, I'm committed to delivering high-quality
+            solutions that not only meet but exceed expectations.
+          </p>
+          <p>Let's build the future, one line of code at a time!</p>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="container" id="container">
+          <div class="list">
+            <div class="info">
+              <h3>First Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                neque voluptatem cumque minus voluptates ea?
+              </p>
+              <button>Live Demo</button>
+            </div>
+          </div>
+          <div class="list">
+            <div class="info">
+              <h3>Second Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                neque voluptatem cumque minus voluptates ea?
+              </p>
+              <button>Live Demo</button>
+            </div>
+          </div>
+          <div class="list">
+            <div class="info">
+              <h3>Third Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                neque voluptatem cumque minus voluptates ea?
+              </p>
+              <button>Live Demo</button>
+            </div>
+          </div>
+          <div class="list">
+            <div class="info">
+              <h3>Fourth Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                neque voluptatem cumque minus voluptates ea?
+              </p>
+              <button>Live Demo</button>
+            </div>
+          </div>
+          <div class="list">
+            <div class="info">
+              <h3>Fifth Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                neque voluptatem cumque minus voluptates ea?
+              </p>
+              <button>Live Demo</button>
+            </div>
+          </div>
+          <div class="list">
+            <div class="info">
+              <h3>Final Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                neque voluptatem cumque minus voluptates ea?
+              </p>
+              <button>Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact <span>Me</span></h2>
+
+        <div class="form" id="form">
+          <form method="POST">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="Subject"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="account">
+        <div class="icon">
+          <a href="https://github.com/AizStein" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>
+          <i class="fa-regular fa-copyright"></i> 2024 DCI_Aiza | All Rights
+          Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

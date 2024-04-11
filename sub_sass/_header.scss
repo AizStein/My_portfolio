@@ -1,0 +1,135 @@
+header {
+  background-color: $secondary_color;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  padding: 1em;
+
+  h3 {
+    font-size: 2.5em;
+    color: white;
+    letter-spacing: 0.1em;
+    margin-left: 0.5em;
+
+    &:hover {
+      text-shadow: 0px 0px 10px rgb(154, 13, 197), 0px 0px 30px rgb(145, 28, 28);
+      transform: scale(1.1);
+    }
+
+    span {
+      @include linear;
+    }
+  }
+
+  nav {
+    text-align: justify;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: $secondary_color;
+    width: 100%;
+    display: none;
+
+    ul {
+      list-style: none;
+      padding: 2em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+
+      li {
+        margin-bottom: 1em;
+        margin-left: 0.5em;
+
+        a {
+          text-decoration: none;
+          color: $basic_color;
+
+          &:hover {
+            @include linear;
+            border-bottom: 3px solid blueviolet;
+          }
+        }
+        .active {
+          @include linear;
+          border-bottom: 3px solid blueviolet;
+        }
+      }
+    }
+  }
+
+  .toggle {
+    display: none;
+
+    &:checked ~ nav {
+      display: block;
+    }
+  }
+
+  .toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    span,
+    &::before,
+    &::after {
+      display: block;
+      background: $primary_color;
+      height: 2px;
+      width: 2em;
+      border-radius: 2px;
+      position: relative;
+      margin-right: 1em;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      bottom: 33px;
+    }
+
+    &::after {
+      top: 33px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    h3 {
+      margin-left: 1em;
+    }
+
+    .toggle-label {
+      display: none;
+    }
+
+    nav {
+      all: unset;
+
+      ul {
+        display: flex;
+        padding: 0;
+        margin-top: 1em;
+        font-weight: 300;
+
+        li {
+          margin-left: 2em;
+
+          &:nth-child(4) {
+            margin-right: 2em;
+          }
+        }
+      }
+    }
+  }
+}

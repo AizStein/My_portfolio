@@ -1,0 +1,68 @@
+footer {
+  background-color: $secondary_color;
+  color: $basic_color;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+
+  .account {
+    display: flex;
+    margin: 2rem;
+
+    .icon {
+      margin: 1em;
+      border: 2px solid blueviolet;
+      width: 40px;
+      border-radius: 50%;
+      color: $primary_color;
+      padding: 0.2em;
+
+      a {
+        @include linear;
+
+        &:hover {
+          color: black;
+        }
+      }
+
+      i {
+        padding-left: 0.5em;
+        @include linear;
+      }
+
+      &:hover {
+        @include box-shadow;
+        transform: scale(1.4);
+      }
+    }
+  }
+  .navbar {
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        margin: 1rem;
+
+        a {
+          text-decoration: none;
+          color: $basic_color;
+          font-size: 1.1em;
+
+          &:hover {
+            border-bottom: 2px solid blueviolet;
+            color: rgb(161, 156, 156);
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    color: rgb(172, 171, 171);
+    padding: 1em;
+    margin-top: 1.5em;
+    font-weight: 200;
+  }
+}
