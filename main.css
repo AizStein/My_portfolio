@@ -358,7 +358,7 @@ footer .copyright {
 .sec_1 .content .skill .box .logo {
   background-color: rgb(245, 244, 244);
   border-radius: 5px;
-  padding: 5px 5px 5px 5px;
+  padding: 12px 5px 0 5px;
 }
 .sec_1 .content .skill .box .logo:hover {
   box-shadow: 0px 0px 10px blueviolet, 0px 0px 30px blueviolet;
@@ -367,12 +367,6 @@ footer .copyright {
 }
 .sec_1 .content .skill .box .logo img {
   width: 30px;
-}
-.sec_1 .content .skill .box .logo:nth-child(3) {
-  padding-top: 0.6em;
-}
-.sec_1 .content .skill .box .logo:nth-child(4) {
-  padding-top: 0.6em;
 }
 .sec_1 .content .btn {
   margin-top: 1.5em;

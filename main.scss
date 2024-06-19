@@ -57,20 +57,12 @@
         .logo {
           background-color: $basic_color;
           border-radius: 5px;
-          padding: 5px 5px 5px 5px;
+          padding: 12px 5px 0 5px;
           @include hover;
 
           img {
             width: 30px;
           }
-        }
-
-        .logo:nth-child(3) {
-          padding-top: 0.6em;
-        }
-
-        .logo:nth-child(4) {
-          padding-top: 0.6em;
         }
       }
     }
