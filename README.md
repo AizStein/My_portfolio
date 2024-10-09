@@ -19,3 +19,8 @@ Welcome to my portfolio project! This was one of my first projects as I embarked
 ### Conclusion
 
 This portfolio project marks the beginning of my journey in web development and serves as a testament to my passion for creating innovative solutions. I continue to learn and grow in this field, and I look forward to taking on new challenges and projects.
+
+
+## Future Plans
+
+As I continue to grow and develop my skills, I plan to regularly update the portfolio with new projects and enhancements. This will include showcasing my work in various technologies and frameworks, as well as any freelance or collaborative projects I undertake.
