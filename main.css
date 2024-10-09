@@ -25,6 +25,8 @@ header {
   justify-content: space-between;
   position: fixed;
   padding: 1em;
+  z-index: 2;
+  box-shadow: 1px 1px 4px rgba(70, 69, 69, 0.24);
 }
 header h3 {
   font-size: 2.5em;
@@ -223,7 +225,7 @@ footer .copyright {
   }
   .about .img-box {
     float: left;
-    margin: 2em;
+    margin: 4em;
   }
   .about .about-me {
     padding: 0;
@@ -231,14 +233,6 @@ footer .copyright {
   }
   .about .about-me h2 {
     padding-top: 1em;
-  }
-  #container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  #container .list .info button {
-    padding: 0.8em;
-    margin-top: 1rem;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -253,8 +247,9 @@ footer .copyright {
   #home .image img {
     width: 300px;
   }
-  #container .list .info button {
-    margin-top: 2rem;
+  .about-content {
+    width: 80%;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1281px) {
@@ -271,21 +266,16 @@ footer .copyright {
     align-items: center;
     flex-shrink: 0;
   }
+  .about .about-content {
+    width: 80%;
+    margin: auto;
+  }
   .about .img-box {
     align-items: center;
   }
   .about .img-box #img-1 {
     height: 500px;
     width: 400px;
-  }
-  #container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 7em;
-    justify-content: center;
-  }
-  #container .list .info button {
-    margin-top: 2rem;
   }
   #contact {
     margin: 0;
@@ -332,6 +322,7 @@ footer .copyright {
 .sec_1 .content p {
   margin-top: 1em;
   font-weight: 300;
+  font-size: 1.1em;
 }
 .sec_1 .content .skill {
   padding: 1.5em;
@@ -484,8 +475,8 @@ footer .copyright {
 
 .projects {
   padding-top: 2rem;
-  min-height: 100vh;
   margin-top: 5rem;
+  z-index: -1;
 }
 .projects h2 {
   color: rgb(245, 244, 244);
@@ -503,53 +494,52 @@ footer .copyright {
   margin: 0 10px;
 }
 .projects .container {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-  padding: 3rem;
+  margin-top: 9rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9rem;
 }
 .projects .list {
-  background: rgba(0, 0, 0, 0.651);
+  background: rgba(173, 158, 158, 0.541);
   color: rgb(245, 244, 244);
-  border-radius: 20px;
-  min-height: 250px;
+  border: 4px solid rgb(27, 27, 27);
 }
 .projects .list:hover {
   box-shadow: 0px 0px 10px blueviolet, 0px 0px 30px blueviolet;
   cursor: pointer;
 }
-.projects .list .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
-  align-items: center;
+.projects .list .project-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 1px 1px 4px rgb(94, 92, 92);
+  height: 100%;
 }
-.projects .list .info h3 {
+.projects .list .card-body {
+  margin-left: 2em;
+}
+.projects .list h3 {
   padding-bottom: 1rem;
-  -webkit-text-decoration: underline 3px blueviolet;
-          text-decoration: underline 3px blueviolet;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.2em;
+  font-size: 2em;
+  color: rgb(23, 7, 39);
+}
+.projects .list p {
   font-size: 1.5em;
-  color: blueviolet;
+  font-weight: 300;
+  color: rgba(250, 248, 248, 0.637);
 }
-.projects .list .info p {
-  font-size: 1em;
-  font-weight: 200;
-}
-.projects .list .info button {
+.projects .list button {
   border: none;
   padding: 0.8em;
   margin-top: 2rem;
-  background: linear-gradient(to left, #ca06c0, #2954c2, #8f68ff, rgb(182, 17, 132));
+  background: rgb(172, 21, 134), rgb(27, 27, 240);
   color: black;
   border-radius: 5px;
   font-weight: 600;
 }
-.projects .list .info button:hover {
+.projects .list button:hover {
+  background-color: rgba(231, 219, 204, 0.562);
   cursor: pointer;
   transform: scale(1.1);
   color: rgb(34, 33, 33);

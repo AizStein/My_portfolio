@@ -39,6 +39,7 @@
     p {
       margin-top: 1em;
       font-weight: 300;
+      font-size: 1.1em;
     }
 
     .skill {
@@ -162,8 +163,8 @@
 
 .projects {
   padding-top: 2rem;
-  min-height: 100vh;
   margin-top: 5rem;
+  z-index: -1;
 
   h2 {
     color: $basic_color;
@@ -172,56 +173,56 @@
   }
 
   .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-    padding: 3rem;
+    margin-top: 9rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9rem;
   }
 
   .list {
-    background: rgba(0, 0, 0, 0.651);
+    background: rgba(173, 158, 158, 0.541);
     color: $basic_color;
-    border-radius: 20px;
-    min-height: 250px;
+    border: 4px solid rgb(27, 27, 27);
     @include hover2;
 
-    .info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 2rem;
-      align-items: center;
+    .project-img img {
+      object-fit: cover;
+      box-shadow: 1px 1px 4px rgb(94, 92, 92);
+      height: 100%;
+    }
 
-      h3 {
-        padding-bottom: 1rem;
-        text-decoration: underline 3px blueviolet;
-        font-weight: 500;
-        letter-spacing: 0.2em;
-        font-size: 1.5em;
-        color: blueviolet;
-      }
+    .card-body {
+      margin-left: 2em;
+    }
 
-      p {
-        font-size: 1em;
-        font-weight: 200;
-      }
+    h3 {
+      padding-bottom: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      font-size: 2em;
+      color: rgb(23, 7, 39);
+    }
 
-      button {
-        border: none;
-        padding: 0.8em;
-        margin-top: 2rem;
-        background: $primary_color;
-        color: black;
-        border-radius: 5px;
-        font-weight: 600;
+    p {
+      font-size: 1.5em;
+      font-weight: 300;
+      color: rgba(250, 248, 248, 0.637);
+    }
 
-        &:hover {
-          cursor: pointer;
-          transform: scale(1.1);
-          color: rgb(34, 33, 33);
-        }
+    button {
+      border: none;
+      padding: 0.8em;
+      margin-top: 2rem;
+      background: $bg2_color;
+      color: black;
+      border-radius: 5px;
+      font-weight: 600;
+
+      &:hover {
+        background-color: rgba(231, 219, 204, 0.562);
+        cursor: pointer;
+        transform: scale(1.1);
+        color: rgb(34, 33, 33);
       }
     }
   }

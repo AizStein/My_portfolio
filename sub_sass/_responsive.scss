@@ -25,7 +25,7 @@
 
     .img-box {
       float: left;
-      margin: 2em;
+      margin: 4em;
     }
 
     .about-me {
@@ -34,20 +34,6 @@
 
       h2 {
         padding-top: 1em;
-      }
-    }
-  }
-
-  #container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    .list {
-      .info {
-        button {
-          padding: 0.8em;
-          margin-top: 1rem;
-        }
       }
     }
   }
@@ -67,14 +53,10 @@
       }
     }
   }
-  #container {
-    .list {
-      .info {
-        button {
-          margin-top: 2rem;
-        }
-      }
-    }
+
+  .about-content {
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -96,27 +78,17 @@
     align-items: center;
     flex-shrink: 0;
 
+    .about-content {
+      width: 80%;
+      margin: auto;
+    }
+
     .img-box {
       align-items: center;
 
       #img-1 {
         height: 500px;
         width: 400px;
-      }
-    }
-  }
-
-  #container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 7em;
-    justify-content: center;
-
-    .list {
-      .info {
-        button {
-          margin-top: 2rem;
-        }
       }
     }
   }
