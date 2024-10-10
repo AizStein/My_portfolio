@@ -62,7 +62,7 @@
           @include hover;
 
           img {
-            width: 30px;
+            width: 35px;
           }
         }
       }
@@ -165,6 +165,9 @@
   padding-top: 2rem;
   margin-top: 5rem;
   z-index: -1;
+  width: 75%;
+  margin: auto;
+  min-height: 100vh;
 
   h2 {
     color: $basic_color;

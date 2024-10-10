@@ -357,7 +357,7 @@ footer .copyright {
   cursor: pointer;
 }
 .sec_1 .content .skill .box .logo img {
-  width: 30px;
+  width: 35px;
 }
 .sec_1 .content .btn {
   margin-top: 1.5em;
@@ -477,6 +477,9 @@ footer .copyright {
   padding-top: 2rem;
   margin-top: 5rem;
   z-index: -1;
+  width: 75%;
+  margin: auto;
+  min-height: 100vh;
 }
 .projects h2 {
   color: rgb(245, 244, 244);
