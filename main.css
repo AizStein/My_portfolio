@@ -11,7 +11,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -345,6 +345,7 @@ footer .copyright {
   justify-content: center;
   gap: 1rem;
   padding-top: 1.5em;
+  flex-wrap: wrap;
 }
 .sec_1 .content .skill .box .logo {
   background-color: rgb(245, 244, 244);

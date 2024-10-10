@@ -54,6 +54,7 @@
         justify-content: center;
         gap: 1rem;
         padding-top: 1.5em;
+        flex-wrap: wrap;
 
         .logo {
           background-color: $basic_color;

@@ -14,12 +14,11 @@ $bg2_color: rgb(172, 21, 134), rgb(27, 27, 240);
 
 body {
   font-family: "Kanit", sans-serif;
-
   background: linear-gradient(to right, rgb(14, 12, 12), rgb(14, 26, 31) 90%);
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
