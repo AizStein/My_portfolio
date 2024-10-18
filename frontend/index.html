@@ -13,8 +13,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="../frontend/main.css" />
     <title>My Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header>
@@ -120,9 +121,7 @@
         <div class="container" id="container">
           <div class="card list" style="max-width: 700px">
             <div class="row d-flex flex-wrap proj-card">
-              <div
-                class="col-6 col-md-4 project-img"
-              >
+              <div class="col-6 col-md-4 project-img">
                 <img
                   src="./image/screenshot.png"
                   alt="project-img"
@@ -155,7 +154,7 @@
         <h2>Contact <span>Me</span></h2>
 
         <div class="form" id="form">
-          <form method="POST">
+          <form id="contact-form">
             <input
               type="text"
               name="name"
@@ -174,13 +173,12 @@
               type="tel"
               id="phone"
               name="phone"
-              placeholder="Phone Number"
-              required
+              placeholder="Phone Number (optional)"
             />
             <input
               type="text"
-              name="text"
-              id="text"
+              name="subject"
+              id="subject"
               placeholder="Subject"
               required
             />
@@ -224,5 +222,6 @@
         </p>
       </div>
     </footer>
+    <script src="../frontend/script.js"></script>
   </body>
 </html>
