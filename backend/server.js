@@ -5,7 +5,11 @@ import { databaseConnection } from "./databaseConnection.js";
 import formRoutes from "./routes/formRoutes.js";
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://aizstein.github.io/My_portfolio/",
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
