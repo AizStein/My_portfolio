@@ -22,7 +22,6 @@ document
       //reset
 
       document.getElementById("contact-form").reset();
-      window.scrollTo(0, 0);
     } catch (error) {
       alert(
         "There was a problem submitting your form. Please try again later."
